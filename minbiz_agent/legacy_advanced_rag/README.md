@@ -1,16 +1,16 @@
 # Legacy Advanced RAG Pipeline
 
-这里归档了 MinBiz v1 的“高级 RAG 实验室”代码：
+This directory archives the code from MinBiz v1's "Advanced RAG Lab":
 
-- 多阶段 RAG 流程：证据包 → Draft(JSON claims + support) → 校验 / Refine → 最终带 [chunk_id] 引用的回答；
-- HybridSearcher + 自建索引构建脚本；
-- 旧版 Streamlit 界面（`app_streamlit_minbiz.py` 等）。
+- Multi-stage RAG pipeline: Evidence package → Draft (JSON claims + support) → Validation / Refine → Final answer with [chunk_id] citations;
+- HybridSearcher + self-built index construction scripts;
+- Legacy Streamlit interface (`app_streamlit_minbiz.py`, etc.).
 
-当前 Startup Companion 页面使用的是简化版主线：
+The current Startup Companion page uses a simplified mainline:
 
 - `minbiz_agent/src/agent/brain.py`
 - `minbiz_agent/src/rag/sqlite_fts.py`
 - `minbiz_agent/src/server/voice_agent.py` (`/ask-business-v1`)
 - `minbiz_agent/src/ui/app_minbiz_chat.py`
 
-以后如果要做“可溯源、可审计”的高级 RAG，可以从这里重新取材。
+If you need to build a traceable and auditable advanced RAG system in the future, you can reference the code here.
