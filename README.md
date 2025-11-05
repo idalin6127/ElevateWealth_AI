@@ -107,10 +107,10 @@ Guidance for career transitions, professional storytelling, and communication sk
 ```mermaid
 graph TD
 A[User] --> B[Streamlit app.py]
-B --> C1[💰 Wealth Checkup]
-B --> C2[🚀 Startup Agent (MinBiz)]
-B --> C3[📈 Investment Agent]
-B --> C4[🎓 Career Agent]
+B --> C1[Wealth Checkup]
+B --> C2[Startup Agent (MinBiz)]
+B --> C3[Investment Agent]
+B --> C4[Career Agent]
 
 C2 --> D1[/ask-business-v1 → FastAPI]
 D1 --> D2[voice_agent.py → brain.py]
