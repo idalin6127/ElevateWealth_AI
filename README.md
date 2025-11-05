@@ -11,6 +11,7 @@
 </p>
 
 ---
+https://github.com/idalin6127/ElevateWealth_AI/blob/main/ElevateWealth_AI_Agent.png
 
 ## 🌟 Overview
 
