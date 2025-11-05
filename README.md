@@ -105,6 +105,7 @@ Guidance for career transitions, professional storytelling, and communication sk
 ## 🧩 Architecture Flow
 
 ```mermaid
+graph TD
     A[User] --> B[Streamlit app.py]
     B --> C1[Wealth Checkup]
     B --> C2[Startup Agent (MinBiz)]
@@ -117,6 +118,7 @@ Guidance for career transitions, professional storytelling, and communication sk
     D3 --> D4[RAG search (FTS5 DB)]
     D4 --> D5[OpenAI GPT-4o]
     D5 --> D6[Answer with evidence]
+
 
 
 ## 🚀 How to Run (Demo Mode)
