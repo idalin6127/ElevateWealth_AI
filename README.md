@@ -106,18 +106,19 @@ Guidance for career transitions, professional storytelling, and communication sk
 
 ```mermaid
 graph TD
-A[User] --> B[Streamlit app.py]
-B --> C1[Wealth Checkup]
-B --> C2[Startup Agent (MinBiz)]
-B --> C3[Investment Agent]
-B --> C4[Career Agent]
+    A[User] --> B[Streamlit app.py]
+    B --> C1[Wealth Checkup]
+    B --> C2[Startup Agent (MinBiz)]
+    B --> C3[Investment Agent]
+    B --> C4[Career Agent]
 
-C2 --> D1[/ask-business-v1 → FastAPI]
-D1 --> D2[voice_agent.py → brain.py]
-D2 --> D3[rags_search → rag_fts5.db]
-D3 --> D4[OpenAI GPT-4o]
-D4 --> D5[Return answer + evidence]
----
+    C2 --> D1[ask-business-v1 API]
+    D1 --> D2[FastAPI server]
+    D2 --> D3[MinBiz brain]
+    D3 --> D4[RAG search (FTS5 DB)]
+    D4 --> D5[OpenAI GPT-4o]
+    D5 --> D6[Answer with evidence]
+
 
 ## 🚀 How to Run (Demo Mode)
 
