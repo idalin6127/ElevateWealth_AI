@@ -12,7 +12,9 @@
 </p>
 
 ---
-https://github.com/idalin6127/ElevateWealth_AI/blob/main/ElevateWealth_AI_Agent.png
+
+## 🎥 Demo Video (to do)
+[![Watch the Demo](https://img.youtube.com/vi/abc123xyz/0.jpg)](https://www.youtube.com/watch?v=abc123xyz)
 
 ## 🌟 Overview
 
