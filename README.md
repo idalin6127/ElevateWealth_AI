@@ -16,6 +16,8 @@
 ## 🎥 Demo Video (to do)
 [![Watch the Demo](https://img.youtube.com/vi/abc123xyz/0.jpg)](https://www.youtube.com/watch?v=abc123xyz)
 
+---
+
 ## 🌟 Overview
 
 **ElevateWealth AI** is an intelligent wealth-growth platform for high-knowledge professionals pursuing **financial freedom**.
