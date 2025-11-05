@@ -116,7 +116,6 @@ D1 --> D2[voice_agent.py → brain.py]
 D2 --> D3[rags_search → rag_fts5.db]
 D3 --> D4[OpenAI GPT-4o]
 D4 --> D5[Return answer + evidence]
-```
 
 ---
 
