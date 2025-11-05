@@ -105,7 +105,6 @@ Guidance for career transitions, professional storytelling, and communication sk
 ## 🧩 Architecture Flow
 
 ```mermaid
-graph TD
     A[User] --> B[Streamlit app.py]
     B --> C1[Wealth Checkup]
     B --> C2[Startup Agent (MinBiz)]
