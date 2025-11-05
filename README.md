@@ -104,22 +104,28 @@ Guidance for career transitions, professional storytelling, and communication sk
 
 ## 🧩 Architecture Flow
 
-```mermaid
-graph TD
-    A[User] --> B[Streamlit app.py]
-    B --> C1[Wealth Checkup]
-    B --> C2[Startup Agent (MinBiz)]
-    B --> C3[Investment Agent]
-    B --> C4[Career Agent]
+```text
+User
+  │
+  ▼
+Streamlit app.py (main dashboard)
+  ├─ 💰 Wealth Checkup
+  │    └─ collects financial data and renders checkup report (demo version)
+  │
+  ├─ 🚀 Startup Agent (MinBiz)
+  │    ├─ calls /ask-business-v1 API
+  │    ├─ FastAPI server (minbiz_agent.src.server.voice_agent)
+  │    ├─ Brain (agent / RAG orchestration)
+  │    ├─ RAG search over rag_fts5.db (SQLite FTS5)
+  │    └─ OpenAI GPT-4o generates grounded answers
+  │
+  ├─ 📈 Investment Agent (coming soon)
+  │    └─ planned ETF / asset allocation analytics
+  │
+  └─ 🎓 Career Agent (planned)
+       └─ planned career growth & communication coaching
 
-    C2 --> D1[ask-business-v1 API]
-    D1 --> D2[FastAPI server]
-    D2 --> D3[MinBiz brain]
-    D3 --> D4[RAG search (FTS5 DB)]
-    D4 --> D5[OpenAI GPT-4o]
-    D5 --> D6[Answer with evidence]
-
-
+---
 
 ## 🚀 How to Run (Demo Mode)
 
