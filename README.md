@@ -166,5 +166,8 @@ forming a **holistic AI-driven Wealth Empowerment Ecosystem**.
 
 ## 📜 License
 
-MIT License © 2025 Ida Lin
-*(Public edition excludes private data and API keys.)*
+This project is licensed under the **MIT License**.  
+© 2025 Ida Lin. All rights reserved.
+
+> *This public edition includes lightweight demo databases (e.g., FTS5 indexes and sample SFT data)  
+> but excludes proprietary datasets, raw sources, and any confidential API keys.*
