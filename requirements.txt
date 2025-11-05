@@ -1,0 +1,48 @@
+# ===== Core =====
+python-dotenv==1.0.1
+PyYAML==6.0.1
+pandas==2.2.2
+numpy==1.26.4
+regex==2024.4.28
+requests==2.32.3
+tqdm==4.66.4
+rich==13.7.1
+
+# ===== Transcription / Audio =====
+ffmpeg-python==0.2.0
+faster-whisper==1.0.2
+
+# ===== Retrieval / NLP =====
+sentence-transformers==3.0.1
+faiss-cpu==1.8.0.post1         # (可换 GPU 版: faiss-gpu==1.7.2；二选一)
+sqlite-utils==3.36.0
+rank-bm25==0.2.2
+jieba==0.42.1
+opencc-python-reimplemented==0.1.7
+rapidfuzz==3.9.6
+
+# ===== UI =====
+streamlit==1.34.0              # >=1.32 才有 st.switch_page，这里定到 1.34 稳定
+audio-recorder-streamlit==0.0.10
+matplotlib==3.9.2
+
+# ===== Backend / API =====
+fastapi==0.110.0
+uvicorn[standard]==0.30.0
+pydantic==2.5.3
+python-multipart==0.0.9
+httpx==0.27.0
+openai>=1.40,<2
+
+# ===== Fine-tuning / Synthetic =====
+transformers==4.44.2
+peft==0.11.1
+accelerate==0.30.1
+datasets==2.20.0
+torch==2.3.1                    # CPU 版；如需 GPU(CUDA 12.x)，改为 pip 安装 torch 对应轮子
+
+# ===== Google Drive Export =====
+google-api-python-client==2.135.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.1
+reportlab

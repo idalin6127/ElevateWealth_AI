@@ -1,0 +1,67 @@
+app:
+  retrieval_mode: faiss
+paths:
+  transcripts_dir: data/fulltext_clean
+  chunks_dir: data/chunks
+  index_dir: data/index
+pipeline:
+  max_chars: 700           # 建议 600–900 之间试验
+  overlap_chars: 100       # 显式记录 overlap
+  sent_split: true
+  normalize: true
+  add_summary: true        # 生成每块两句摘要
+  add_keywords: true       # 生成关键词（便于第一跳召回）
+  opencc: "t2s"            # 繁->简 或 "s2t" 简->繁；不需要可设 null
+  typo_fix: true           # 是否启用错别字/ASR词典修正
+  lang_detect: true
+
+display:
+  mode: "summary"            # summary | snippet | none
+  max_chars_per_snippet: 90  # 单段最长直接引用字符数
+  max_total_quote_chars: 300 # 整条回答累积直接引用上限
+  show_refs: true            # 是否输出结构化引用
+  admin_debug_text: false    # 仅在内部/调试显示原文长段
+
+generation:
+  model: "gpt-4o"            # 或你的企业模型/本地模型标识
+  temperature_draft: 0.2
+  temperature_refine: 0.35
+  temperature_final: 0.3
+  json_mode: true            # draft/refine 两阶段建议强制 JSON
+
+index:
+  encoder_model: intfloat/multilingual-e5-base   # 或 moka-ai/m3e-base
+  normalize_embeddings: true
+  faiss_metric: "ip"
+
+bm25:
+  tokenizer: "jieba_bigram"   # 你会在 tokenizers 中新增
+  stopwords: "data/stopwords_zh.txt"
+  english_lower: true
+
+hybrid:
+  rrf_k: 60
+  candidate_pool: 50
+  
+faiss:
+  index_type: IndexFlatIP
+  normalize: true
+
+rerank:
+  enabled: true
+  model: "mixedbread-ai/mxbai-rerank-xsmall-v1"  # 或 BAAI/bge-reranker-base
+  top_k: 50
+  final_k: 10
+
+llm:
+  provider: "openai"
+  model_draft: "gpt-4o-mini"
+  model_refine: "gpt-4o"
+  temperature_draft: 0.2
+  temperature_refine: 0.3
+
+orchestration:
+  topk_final: 10
+  per_ctx_blocks: 6
+  use_rerank: true
+  evidence_low_threshold: 0.25
