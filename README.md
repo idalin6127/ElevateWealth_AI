@@ -1,7 +1,7 @@
 # 💎 ElevateWealth AI — Intelligent Wealth Growth Platform
 
 <p align="center">
-  <img src="https://github.com/idalin6127/ElevateWealth_AI/raw/main/ElevateWealth_AI_Agent.png" width="600">
+  <img src="https://github.com/idalin6127/ElevateWealth_AI/raw/main/ElevateWealth_AI_Agent.png" width="500">
 </p>
 
 
