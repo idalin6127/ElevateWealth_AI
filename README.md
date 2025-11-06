@@ -15,14 +15,11 @@
 
 ## 🎥 Demo Video
 
-## 🎥 Demo Video
-
 <p align="center">
   <a href="https://www.youtube.com/watch?v=oyI-88CRMtI" target="_blank">
-    <img src="https://github.com/idalin6127/ElevateWealth_AI/blob/main/demo.png" width="600" alt="Watch the Demo">
+    <img src="https://github.com/idalin6127/ElevateWealth_AI/blob/main/demo.png" width="300" alt="Watch the Demo">
   </a>
 </p>
-(https://www.youtube.com/watch?v=oyI-88CRMtI)
 
 
 ---
