@@ -39,7 +39,7 @@ It unifies multiple intelligent modules within one Streamlit dashboard (`app.py`
 
 ---
 
-## 📂 项目结构 / Project Structure
+## 📂 Project Structure
 
 ```plaintext
 ElevateWealth_AI/
@@ -87,7 +87,7 @@ ElevateWealth_AI/
 
 ---
 
-## 🧠 模块说明 / Module Highlights
+## 🧠 Module Highlights
 
 ### 💰 Wealth Checkup
 
