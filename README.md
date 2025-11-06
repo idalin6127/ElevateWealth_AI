@@ -14,7 +14,7 @@
 ---
 
 ## 🎥 Demo Video (to do)
-[![Watch the Demo](https://img.youtube.com/vi/abc123xyz/0.jpg)](https://www.youtube.com/watch?v=abc123xyz)
+[![Watch the Demo]([https://img.youtube.com/vi/abc123xyz/0](https://youtu.be/oyI-88CRMtI).jpg)]
 
 ---
 
