@@ -13,7 +13,7 @@
 
 ---
 
-## 🎥 Demo Video
+## 🎥 Demo Video (click picture)
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=oyI-88CRMtI" target="_blank">
