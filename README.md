@@ -13,8 +13,10 @@
 
 ---
 
-## 🎥 Demo Video (to do)
-[![Watch the Demo]([https://img.youtube.com/vi/abc123xyz/0](https://youtu.be/oyI-88CRMtI).jpg)]
+## 🎥 Demo Video
+
+[![Watch the Demo](https://img.youtube.com/vi/oyI-88CRMtI/0.jpg)](https://www.youtube.com/watch?v=oyI-88CRMtI)
+
 
 ---
 
